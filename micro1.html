@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <title>Documentation</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Technical Documentation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class=" sticky top-0 w-full px-8 text-gray-700 bg-white">
+    <div class="sticky top-0 container flex flex-col flex-wrap place-items-end justify-end py-5 mx-auto md:flex-row max-w-7xl">
+        <div class="relative flex flex-col md:flex-row">
+            <a href="#_" class="flex items-center mb-5 font-medium text-gray-900 lg:w-auto lg:items-center lg:justify-center md:mb-0">
+                <span class="mx-auto text-xl font-black leading-none text-gray-900 select-none">Documentation<span class="text-indigo-600">.</span></span>
+            </a>
+            <nav class="flex flex-wrap items-center mb-5 text-base md:mb-0 md:pl-8 md:ml-8 md:border-l md:border-gray-200">
+                <a href="index.html" class="mr-5 font-medium leading-6 text-gray-600 hover:text-gray-900">Home</a>
+                <a href="micro1.html" class="mr-5 font-medium leading-6 text-gray-600 hover:text-gray-900">Microtask1</a>
+                <a href="micro2.html" class="mr-5 font-medium leading-6 text-gray-600 hover:text-gray-900">Microtask2</a>
+                <a href="micro3.html" class="mr-5 font-medium leading-6 text-gray-600 hover:text-gray-900">Microtask3</a>
+            </nav>
+        </div>
+
+
+    </div>
+</section>
+    <nav id="navbar">
+      <ul>
+        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+        <li>
+          <a class="nav-link" href="#Installation Locally"
+            >Installation Locally</a
+          >
+        </li>
+        <li>
+          <a class="nav-link" href="#About_repository">About repository</a>
+        </li>
+        <li><a class="nav-link" href="#API_Endpoints">API Endpoints</a></li>
+        <li>
+          <a class="nav-link" href="#Data"
+            >Data in form of JSON</a
+          >
+        </li>
+        <li>
+          <a class="nav-link" href="#APIget"
+            >To get the response of API</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <article>
+          <p>
+            The API is used to get user information in a temporary database created in form of a JSON file.<br>The API is live on deployment server i.e. Deta.sh : <a href="https://ryc3wa.deta.dev/">https://ryc3wa.deta.dev/</a>
+          </p>
+        </article>
+      </section>
+
+      <section class="main-section" id="Installation Locally">
+        <header>Installation Locally</header>
+        <article>
+          <code>
+          <p>
+            In order to run the API locally clone the repository from my github account :<a href="https://github.com/Ani-Bos/Microtask1.git"> https://github.com/Ani-Bos/Microtask1.git</a>
+          </p>
+            <p>
+            Then cd first_micro
+          </p>
+          <p>
+            Then install the dependencies as required for this microtask like cors and express like npm i express cors . 
+          </p>
+
+            <p>
+            Then run  " node index.js "
+          </p>
+            <p>
+            In order to fetch the API and to get a response from get request use "/service" path
+          </p>
+          </code>
+        </article>
+      </section>
+
+       <section class="main-section" id="About_repository">
+        <header>About repository</header>
+        <article>
+          <p>
+         This repository is created for building an API for MicroTask 1 given by HostelDevta in developement phase.I have created an express server and by using get request we are first reading the data.json file and finally in app we are calling data and exporting it as default app.
+          </p>
+        </article>
+      </section>
+
+         <section class="main-section" id="API_Endpoints">
+        <header>API Endpoints</header>
+        <article>
+
+        </article>
+      </section>
+
+
+      <section class="main-section" id="Data">
+        <header>Data in form of JSON</header>
+        <article>
+          <p>
+            The schema of the model is in form of an array like this :
+          </p>
+          <ul>
+            <li>
+             { 
+            </li>
+              <li>
+             "user1": {
+            </li>
+            <li>"id":1,</li>
+            <li>"firstname":"Munonye",</li>
+            <li>
+                "lastname":"Kindson",
+            </li>
+               <li>
+                 "email":"kany@gmail.com"
+            </li>
+            <li>
+            }
+            </li>
+             <li>
+            }
+            </li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="APIget">
+        <header>To get the response of API</header>
+        <article>
+          <code
+            >
+           # Method : GET
+            <br />
+           # Endpoint :  '/'
+            <br />
+            # This will result in "Hello"
+            <br />
+            #  Endpoint : "/service"
+            <br />
+            # This will result in "showing the {username , email , password} from the Data.json"
+            <br />
+            
+          </code>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
+
+</body>
+</html>
